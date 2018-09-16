@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundfb"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/imv_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:background="@drawable/background_iconfb"/> //ảnh facebook
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/imv_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/hint_email_phone"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:padding="@dimen/text_padding"/> //nhập tài khoản
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/hint_pass"
+        android:inputType="textPassword"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:padding="@dimen/text_padding"/> //nhập pass
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_login"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:background="@drawable/border_login_button"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_large"/> //button login
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"/>//sign up for facebook
+    <ImageButton
+        android:id="@+id/btn_chamhoi"
+        android:background="@drawable/icon_dau_cham_hoi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
+        android:layout_marginRight="@dimen/edt_magin_right"/> //dấu chấm hỏi
+</RelativeLayout>
