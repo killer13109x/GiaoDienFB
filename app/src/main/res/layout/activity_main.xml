@@ -71,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"/>//sign up for facebook
-    <ImageButton
+    <Button
         android:id="@+id/btn_chamhoi"
         android:background="@drawable/icon_dau_cham_hoi"
         android:layout_width="30dp"

@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button btnLogin;
     private Button btnSignUp;
+    private Button btnChamHoi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnChamHoi = findViewById(R.id.btn_chamhoi);
+        btnChamHoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MainActivity.this, ForfunActivity.class);
+                startActivity(intent3);
+            }
+        });
 
     }
 }
